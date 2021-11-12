@@ -11,13 +11,18 @@ let bday = parseInt(prompt("Enter date of birth"))
 
 
 let mdays =['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+
 let fdays =['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+
 let mAkan =['kwasi','kwadwo','kwabena','kwaku','yaw','kofi','kwame']
+
 let fAkan =['akosua','adwoa','abenaa','akua','yaa','afua','ama']
 
 
 
-function calculate() {
- 
+function checkAkan() {
+     
       console.log(`your Akan name is ${akan}. The day you were born is ${day}. `)
+
+     
 }
