@@ -24,3 +24,9 @@ switch (new Date().getDay()) {
   case 6:
     day = "Saturday";
 }
+function calculating day(){
+  year = document.getElementById ('year').value;
+  CC = parseInt(year.substring(0,2));
+  d = (((CC/4) -2*CC-1) + ((5*YY/4)) + ((26 * (MM+1)/10)) DD )mod 7
+  return (math.floor(d));
+}
