@@ -13,7 +13,7 @@
 
 {This application does not depend on any other code.}
 ## live link
-https://victormbaabu.github.io/myportfolio/
+https://victormbaabu.github.io/birthdaycalculator/
 
 ## Known Bugs
 {The application has no known bugs. However it is still being improved }
