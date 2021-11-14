@@ -51,7 +51,7 @@ function dayfinder ()  {
 
   console.log(myGenderValue);
 
-  // validation functions
+  //month validation functions
   function monthValidator () {
       if (monthOfBirth < 1 || monthOfBirth > 12) {
         return false;
