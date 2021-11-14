@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Birth calculator</title>
+  <title>Birthday Akan calculator</title>
 
   <script type = "text/javascript" src="main.js"></script>
   <!-- css linkage -->
@@ -19,13 +19,14 @@
   <div id="main">
 
     <!-- child containers -->
-    <div id="head"><h1>BIRTHDAY CALCULATOR</h1>
-      
+    <div id="head"><h1>BIRTHDAY CALCULATOR</h1>      
 
+      <p>Welcome to the birthday Akan calculator.</p>
       <p>This application enables you to see your Akan Name based on your gender and date of Birth.</p>
     </div>
 
     <form action="#" id="form-user" method="post">
+      <h4>Below is a form where you can fill in your birthday details.</h4>
 
         <label>Enter year born</label> <input type="number" id="YYYY"><br>
 
@@ -43,6 +44,10 @@
         <button class="btn1" id="submitbtn" onclick="dayfinder()">Submit</button><br>
 
       </form>
+      <form onsubmit="return clearInput()">
+        <input class="clear" type="submit" value="clear form">
+      </form>
+
 
       
     <div>

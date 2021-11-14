@@ -18,7 +18,6 @@ let daysOfWeek = [
     }
   
     console.log(index);
-  
 
 
 
