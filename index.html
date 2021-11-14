@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script>src="main.js"</script>
-
-
   <title>Birth calculator</title>
+
+  <script type = "text/javascript" src="main.js"></script>
   <!-- css linkage -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -26,10 +25,11 @@
       <p>This application enables you to see your Akan Name based on your gender and date of Birth.</p>
     </div>
 
-    <form action="main.js" method="post">
-        <label>Enter century born</label> <input type="text" id="CC"><br>
+    <form action="#" id="form-user" method="post">
 
-        <label>Enter year born</label> <input type="text" id="YY"><br>
+        <label>Enter century born</label> <input type="number" id="CC"><br>
+
+        <label>Enter year born</label> <input type="number" id="YY"><br>
 
         <label>Enter month born</label> <input type="text" id="MM"><br>
 
@@ -40,10 +40,13 @@
         <label><i>Male</i> </label>
         <input type="radio" id="gender" name="genderid" value="male"><br>
         <label><i>Female</i></label>
-        <input type="radio" id="gender" name="genderid" value="female"><br>
+        <input type="radio" id="gender" name="genderid2" value="female"><br>
       
-        <button class="btn1">Submit</button><br>
+        <button class="btn1" id="submitbtn" onclick="dayfinder()">Submit</button><br>
+
       </form>
+
+      
     <div>
         
         
