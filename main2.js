@@ -32,11 +32,11 @@
   //return (math.floor(d));
 //}
 function dayfinder ()  {
-  let yearOfBirth = document.getElementById("YYYY").value;
-  let monthOfBirth = Number(document.getElementById("MM").value);
-  let dayOfBirth = Number(document.getElementById("DD").value);
+    let yearOfBirth = document.getElementById("YYYY").value;
+    let monthOfBirth = Number(document.getElementById("MM").value);
+    let dayOfBirth = Number(document.getElementById("DD").value);
 
-  let genders = document.getElementsByName("gender");
+    let genders = document.getElementsByName("gender");
 
   // gender fetch function
   function getGender () {
@@ -53,17 +53,17 @@ function dayfinder ()  {
 
   // validation functions
   function monthValidator () {
-    if (monthOfBirth < 1 || monthOfBirth > 12) {
-      return false;
+      if (monthOfBirth < 1 || monthOfBirth > 12) {
+        return false;
     } else {
       return true;
     }
   }
 
   function dayValidator () {
-    if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
-      if (dayOfBirth > 28 || dayOfBirth < 1) {
-        return false;
+      if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
+        if (dayOfBirth > 28 || dayOfBirth < 1) {
+          return false;
       } else if (monthOfBirth === 2 && dayOfBirth > 29) {
         return false;
       } else if (monthOfBirth === 2 && dayOfBirth < 1) {
