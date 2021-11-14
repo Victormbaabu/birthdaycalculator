@@ -1,3 +1,4 @@
+//array declarations
 let daysOfWeek = [
       "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
     ];
@@ -27,7 +28,7 @@ let daysOfWeek = [
       let dayOfBirth = Number(document.getElementById("DD").value);
       let genders = document.getElementsByName("gender");
     
-      // function to get gender
+      // gender fetch function
       function getGender () {
         for (let gender of genders){
           if (gender.checked){
@@ -39,7 +40,7 @@ let daysOfWeek = [
       let myGenderValue = getGender();
       console.log(myGenderValue);
     
-      // validation functions
+      // function validation
       function monthValidator () {
         if (monthOfBirth < 1 || monthOfBirth > 12) {
           return false;

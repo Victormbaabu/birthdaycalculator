@@ -5,7 +5,7 @@
 {This  a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.}
 ## Setup/Installation Requirements
 * Open github 
-* Navigate to the Projects name 
+* Navigate to the Projects name on the birth calculator repository
 * Navigate to the cloning section and clone the repository.
 * Paste the URL in your machine's location and open the project
 * Other path is just downloading the zip file and unzipping it to desired location on machine and run the files.

@@ -38,7 +38,7 @@ function dayfinder ()  {
 
   let genders = document.getElementsByName("gender");
 
-  // function to get gender
+  // gender fetch function
   function getGender () {
     for (let gender of genders){
       if (gender.checked){
@@ -82,7 +82,7 @@ function dayfinder ()  {
   let monthValid = monthValidator();
   let dayValid = dayValidator();
 
-  //formula to determine day of birth (Sunday = 1, Monday = 2)etc..
+  //formula to determine day of birth
   let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
           ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
@@ -95,7 +95,7 @@ function dayfinder ()  {
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
   ];
 
-  //condition statement that validates input
+  //condition statement for input validation
   if (myGenderValue == "male" && monthValid && dayValid){
     switch (dayOfWeekNumber) {
       case 1:
