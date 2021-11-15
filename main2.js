@@ -15,6 +15,7 @@ function dayfinder ()  {
       }
     }
   }
+  // A comment
 
   let myGenderValue = getGender();
 
@@ -124,45 +125,52 @@ function dayfinder ()  {
     switch (dayOfWeekNumber) {
       case 1:
         document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + femaleAkanNames[0];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + femaleAkanNames[0]);
         break;
       case 2:
         document.getElementById('result').textContent = "You were born on a Monday: your Akan name is " + femaleAkanNames[1];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
-        alert("Kwadwo");
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + femaleAkanNames[1]);
         break;
       case 3:
         document.getElementById('result').textContent = "You were born on a Tuesday: your Akan name is " + femaleAkanNames[2];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        //document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //return false;
+        alert("You are a " + femaleAkanNames[2]);
         break;
       case 4:
         document.getElementById('result').textContent = "You were born on a Wednesday: your Akan name is " + femaleAkanNames[3];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        //document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //return false;
+        alert("You are a " + femaleAkanNames[3]);
         break;
       case 5:
         document.getElementById('result').textContent = "You were born on a Thursday: your Akan name is " + femaleAkanNames[4];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        //document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //return false;
+        alert("You are a " + femaleAkanNames[4]);
         break;
       case 6:
         document.getElementById('result').textContent = "You were born on a Friday: your Akan name is " + femaleAkanNames[5];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        //document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //return false;
+        alert("You are a " + femaleAkanNames[5]);
         break;
       case 7:
         document.getElementById('result').textContent = "You were born on a Saturday: your Akan name is " + femaleAkanNames[6];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        //document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //return false;
+        alert("You are a " + femaleAkanNames[6]);
         break;
-      case 0:
-        document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + femaleAkanNames[0];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
-        break;
+      //case 0:
+        //document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + femaleAkanNames[0];
+        //document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        //return false;
+        //alert("You are a " + femaleAkanNames[0]);
+       // break;
       default:
         alert("No Akan name");
       }
