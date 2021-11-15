@@ -1,8 +1,8 @@
 
 function dayfinder ()  {
     let yearOfBirth = document.getElementById("YYYY").value;
-    let monthOfBirth = Number(document.getElementById("MM").value);
-    let dayOfBirth = Number(document.getElementById("DD").value);
+    let monthOfBirth = document.getElementById("MM").value;
+    let dayOfBirth = document.getElementById("DD").value;
 
     let genders = document.getElementsByName("gender");
 
@@ -10,6 +10,7 @@ function dayfinder ()  {
   function getGender () {
     for (let gender of genders){
       if (gender.checked){
+
         return gender.value;
       }
     }
@@ -17,29 +18,36 @@ function dayfinder ()  {
 
   let myGenderValue = getGender();
 
-  console.log(myGenderValue);
+  console.log("The gender is " + myGenderValue);
+  console.log("The year is " + yearOfBirth);
+  console.log("The day is " + dayOfBirth);
+  console.log("The month is " + monthOfBirth);
 
   //month validation functions
   function monthValidator () {
-      if (monthOfBirth < 1 || monthOfBirth > 12) {
+    let monthInt = parseInt(monthOfBirth);
+    let dayInt = parseInt(dayOfBirth);
+      if (monthInt < 1 || monthInt > 12) {
         return false;
     } else {
       return true;
     }
   }
-
+//day validation function
   function dayValidator () {
-      if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
-        if (dayOfBirth > 28 || dayOfBirth < 1) {
+    let monthInt = parseInt(monthOfBirth);
+    let dayInt = parseInt(dayOfBirth);
+      if (monthInt === 2 && Number(yearOfBirth)%4 === 0) {
+        if (dayInt > 28 || dayInt < 1) {
           return false;
-      } else if (monthOfBirth === 2 && dayOfBirth > 29) {
+      } else if (monthInt === 2 && dayInt > 29) {
         return false;
-      } else if (monthOfBirth === 2 && dayOfBirth < 1) {
+      } else if (monthInt === 2 && dayInt < 1) {
         return false;
       } else {
         return true;
       }
-    } else if (dayOfBirth < 1 || dayOfBirth > 31){
+    } else if (dayInt < 1 || dayInt > 31){
       return false;
     } else {
       return true;
@@ -68,43 +76,45 @@ function dayfinder ()  {
     switch (dayOfWeekNumber) {
       case 1:
         document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + maleAkanNames[0];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + maleAkanNames[0]);
         break;
       case 2:
         document.getElementById('result').textContent = "You were born on a Monday: your Akan name is " + maleAkanNames[1];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + maleAkanNames[1]);
         break;
       case 3:
         document.getElementById('result').textContent = "You were born on a Tuesday: your Akan name is " + maleAkanNames[2];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + maleAkanNames[2]);
         break;
       case 4:
         document.getElementById('result').textContent = "You were born on a Wednesday: your Akan name is " + maleAkanNames[3];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + maleAkanNames[3]);
         break;
       case 5:
         document.getElementById('result').textContent = "You were born on a Thursday: your Akan name is " + maleAkanNames[4];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + maleAkanNames[4]);
         break;
       case 6:
         document.getElementById('result').textContent = "You were born on a Friday: your Akan name is " + maleAkanNames[5];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + maleAkanNames[5]);
         break;
       case 7:
         document.getElementById('result').textContent = "You were born on a Saturday: your Akan name is " + maleAkanNames[6];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
-        break;
-      case 0:
-        document.getElementById('result').textContent = "You were born on a Sunday: your Akan name is " + maleAkanNames[0];
-        document.getElementById('display-name').textContent = "Here is your Akan name: ";
-        return false;
+        // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+        // return false;
+        alert("You are a " + maleAkanNames[6]);
         break;
       default:
         alert("No Akan Name");
@@ -156,7 +166,20 @@ function dayfinder ()  {
       default:
         alert("No Akan name");
       }
-    } else{
-      alert("You entered invalid month or day");
+    } 
+    else if(!monthValid){
+      alert("The month is not valid")
+    }
+    else if(!dayValid){
+      alert("The month is not valid")
+    }
+    else{
+      if(!monthValid){
+        alert("The month is not valid")
+      }
+      else if(!dayValid){
+        alert("The month is not valid")
+      }
+      // alert("You entered invalid month or day");
     }
   }
